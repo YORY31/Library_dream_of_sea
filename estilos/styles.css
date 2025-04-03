@@ -1,0 +1,8 @@
+.header-section {
+    background-image: url('../Aseets/ImgPrincipal.jpg'); /* Ruta de la imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 150px 0;
+}
