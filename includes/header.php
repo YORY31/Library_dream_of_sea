@@ -4,15 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Librería Online</title>
+    <title>Mar & libros</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/estilo.css">
+    <style>
+    .custom-bg {
+    background-color:rgba(6, 5, 46, 0.8); /* Color naranja personalizado */
+  }
+  
+  .custom-text {
+    color:rgb(246, 238, 238); /* Color verde personalizado */
+  }
+</style>
 </head>
+
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="index.php">Librería Online</a>
+        <a class="navbar-brand" href="index.php">Mar & libros</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -25,3 +35,5 @@
         </div>
     </div>
 </nav>
+</body>
+</html>

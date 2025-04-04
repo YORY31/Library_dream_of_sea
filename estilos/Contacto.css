@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.contact-container {
+    display: flex;
+    height: 100vh;
+}
+.contact-image {
+    flex: 1;
+    background: url('../aseets/Book.jpg') no-repeat center center/cover;
+}
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+.contact-form h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
