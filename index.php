@@ -31,8 +31,8 @@
             <div class="col-md-4">
                 <div class="service-box">
                     <img src="./aseets/contacto.png" alt="Envío Rápido">
-                    <h5>Envío Rápido</h5>
-                    <p>Entregas rápidas y seguras.</p>
+                    <h5>Comenta</h5>
+                    <p>Si necesitas que agreguemos nuevos libros y autores puedes eviarnos tu feedback.</p>
                 </div>
             </div>
         </div>

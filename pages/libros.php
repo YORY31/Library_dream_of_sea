@@ -12,7 +12,7 @@ $libros = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listado de Libros</title>
+    <title>Libros</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/estilo.css">
     <style>
@@ -48,7 +48,7 @@ $libros = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="../pages/libros.php">Libros</a></li>
                 <li class="nav-item"><a class="nav-link" href="../pages/autores.php">Autores</a></li>
-                <li class="nav-item"><a class="nav-link" href="../pages/contacto.php">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="../pages/contacto.php">Contactanos</a></li>
             </ul>
         </div>
     </div>
@@ -56,8 +56,8 @@ $libros = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     <header class="header-section">
     <div class="container text-center text-white-bold">
-    <h1>Listado de libros</h1>
-    <p class="lead">Aquí puedes encontrar todos los libros disponible en nuestra librería.</p>
+    <h1>Libros</h1>
+    <p class="lead">Aquí encontraras todos los libros disponible en nuestra librería.</p>
     </div>
 </header>
 
@@ -75,7 +75,9 @@ $libros = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <p class="card-text"><strong>Ventas Totales:</strong> <?= $libro['total_ventas']; ?></p>
                         <p class="card-text"><strong>Notas:</strong> <?= $libro['notas']; ?></p>
                         <p class="card-text"><strong>Fecha de Publicación:</strong> <?= date("d-m-Y", strtotime($libro['fecha_pub'])); ?></p>
-                        <a href="#" class="btn btn-primary">Ver detalles</a>
+                        <a href="#" class="btn btn-primary ver-detalles">Ver detalles</a>
+
+
                     </div>
                 </div>
             </div>
@@ -91,6 +93,28 @@ $libros = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </ul>
     </footer>
 
+    <!-- Modal -->
+<div class="modal fade" id="mensajeModal" tabindex="-1" aria-labelledby="mensajeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="mensajeModalLabel">Información</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p id="mensajeTexto">Aún estamos trabajando en esta parte.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../Scripts/script.js"></script>
+
+    
+
 </body>
 </html>

@@ -44,7 +44,7 @@ $autores = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="../pages/libros.php">Libros</a></li>
                 <li class="nav-item"><a class="nav-link" href="../pages/autores.php">Autores</a></li>
-                <li class="nav-item"><a class="nav-link" href="../pages/contacto.php">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="../pages/contacto.php">Contactanos</a></li>
             </ul>
         </div>
     </div>

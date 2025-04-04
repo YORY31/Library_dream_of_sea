@@ -2,7 +2,7 @@
 $host = "localhost";
 $dbname = "libreria";
 $username = "root";
-$password = ""; // En XAMPP, por defecto la contraseña está vacía
+$password = ""; 
 
 try {
     $conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
