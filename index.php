@@ -42,7 +42,7 @@
 
 <section class="py-5 custom-bg custom-text text-center">
     <div class="container">
-        <h2 class="mb-4">¿Necesitas mas informacion</h2>
+        <h2 class="mb-4">¿Necesitas mas informacion?</h2>
         <a href="pages/contacto.php" class="btn btn-light btn-lg">Contáctanos</a>
     </div>
 </section>
